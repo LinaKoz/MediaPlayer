@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notification_background"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/cancel"
+        android:id="@+id/canelNotifaction"
+        android:layout_alignParentEnd="true"
+        >
+
+    </ImageView>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_gravity="start"
+        android:layout_margin="10dp"
+        android:id="@+id/songImageNotification"
+        android:background="@null">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/songNameNotification"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/songImageNotification"
+        android:text="song Name">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_below="@+id/songNameNotification"
+        android:layout_toEndOf="@+id/songImageNotification"
+        android:id="@+id/ArtistNameNotifaction"
+        android:text="artisit name">
+    </TextView>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_marginLeft="65dp"-->
+<!--        android:id="@+id/buttonLayout"-->
+<!--        android:layout_below="@+id/ArtistNameNotifaction">-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+           android:gravity="center"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/songImageNotification">
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@null"
+                android:id="@+id/prev"
+                android:src="@drawable/prev">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stop"
+                android:layout_toEndOf="@+id/prev"
+                android:background="@null"
+                android:src="@drawable/pause">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_toEndOf="@+id/stop"
+                android:id="@+id/play"
+                android:src="@drawable/play1">
+            </ImageButton>
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@null"
+                android:id="@+id/next"
+                android:layout_toEndOf="@+id/play"
+                android:src="@drawable/next">
+            </ImageButton>
+
+        </RelativeLayout>
+
+<!--    </LinearLayout>-->
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/navPlay"-->
+<!--        app:backgroundTint="@color/red"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_below="@+id/songImageNotification"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:menu="@menu/newsong" />-->
+
+
+
+</RelativeLayout>

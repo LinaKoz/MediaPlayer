@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/prev"
+        android:enabled="true"
+        android:icon="@drawable/prev"
+        android:title="prev"/>
+
+    <item
+        android:id="@+id/stop"
+        android:enabled="true"
+        android:icon="@drawable/stop"
+        android:title="open gallery"/>
+    <item
+        android:id="@+id/play"
+        android:enabled="true"
+        android:icon="@drawable/play"
+        android:title="play"/>
+    <item
+        android:id="@+id/next"
+        android:enabled="true"
+        android:icon="@drawable/next"
+        android:title="next"/>
+<!--            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/prev"
+            android:src="@drawable/prev2">
+        </ImageButton>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:id="@+id/stop"
+            android:layout_toEndOf="@+id/prev"
+            android:background="@null"
+            android:src="@drawable/pause">
+        </ImageButton>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:background="@null"
+            android:layout_toEndOf="@+id/stop"
+            android:id="@+id/pla1"
+            android:src="@drawable/play1">
+        </ImageButton>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_toEndOf="@+id/play"
+            android:background="@null"
+            android:id="@+id/next"
+            android:src="@drawable/next2">
+        </ImageButton>-->
+
+</menu>
