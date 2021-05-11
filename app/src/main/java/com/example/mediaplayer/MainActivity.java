@@ -199,6 +199,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             getSupportFragmentManager().popBackStack();
             visibility();
         }
+    
+       else super.onBackPressed();
     }
     public void visibility(){
 
